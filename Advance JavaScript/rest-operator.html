@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advance JavaScript</title>
+    <script>
+        function sum(name,course, ...args){
+            console.log(arguments);
+
+            document.write(`Hello ${name} of ${course} : `)
+
+            let sum = 0;
+            for(let i in args){
+                sum += args[i];
+            }
+            document.write(sum + "<br>");
+        }
+
+        sum("Harsh patel","Btech",20,30,50);
+        sum("Sahil Talaviya","BE",10,20);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advance JS</title>
+    <script>
+        /*
+        let test = async () => "Hello";
+
+        test().then((result) => {
+            console.log(result);
+        });
+        */
+
+
+
+        /*
+        async function test(){
+            console.log("2 : Message");
+            // await console.log("3 : Message");
+            const response = await fetch("json/student_data.json");
+            console.log("4 : Message");
+        }
+
+        console.log("1 : Message");
+        test();
+        console.log("5 : Message");
+        */
+
+
+
+        async function test(){
+            try{
+                const response = await fetch("json/student_data.json");
+                const students = await response.json();
+
+            return students;
+            }catch(error){
+                console.log(error);
+            }
+        }
+
+        test().then((res) => {
+            console.log(res);
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

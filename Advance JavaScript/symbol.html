@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advance JS</title>
+    <script>
+        /*
+        let id1 = Symbol("Hello");
+        let id2 = Symbol("Hello");
+
+        console.log(id1 == id2);
+        */
+
+
+
+        let age = Symbol("age");
+
+        let user = {
+            name :'Harsh Patel',
+            class : 'Btech'
+        };
+
+        user[age] = 25;
+        user["gender"] = "Male";
+
+        // console.log(user.class);
+        // console.log(user[age]);
+        
+        console.log(user);
+
+        console.log(JSON.stringify(user));
+    </script> 
+</head>
+<body>
+    
+</body>
+</html>
